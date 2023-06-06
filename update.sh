@@ -13,7 +13,7 @@ _set_version() {
 }
 
 case $VERSION in
-    "")  # initial upgrade (versioning installation)
+    0)  # initial upgrade (versioning installation)
         _set_version 1
         rm -rf /tmp/0
         VERSION=1
