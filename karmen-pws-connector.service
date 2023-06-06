@@ -1,0 +1,12 @@
+[Unit]
+Description=Karmen PWS Connector
+After=local-fs.target
+After=network.target
+
+[Service]
+ExecStart=/home/pi/karmen-pws-connector/update.sh
+RemainAfterExit=true
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
