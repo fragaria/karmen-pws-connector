@@ -6,7 +6,9 @@ if [ `id -u` != 0]; then
 fi
 
 cd `dirname $0`
-ln -s `pws`/karmen-pws-connector.service /etc/systemd/system
-systemctl daemon-update
+ln -s `pwd`/karmen-pws-connector.service /etc/systemd/system
+systemctl daemon-reload
 systemctl enable karmen-pws-connector
 systemctl start karmen-pws-connector
+
+echo 'karmen-pws-connector' >> /home/pi/printer_data/moonraker.asvc
