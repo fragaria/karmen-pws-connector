@@ -17,6 +17,7 @@ case $VERSION in
         _set_version 1
         rm -rf /tmp/0
         VERSION=1
+        ;;
     1)
         mkdir /tmp/2
         _set_version 2
