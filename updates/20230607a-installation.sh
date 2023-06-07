@@ -9,10 +9,10 @@ if ! grep karmen-pws-connector $PRINTER_DATA/config/moonraker.conf > /dev/null; 
 sudo -u pi cat >>$PRINTER_DATA/config/moonraker.conf <<EOD
 
 [update_manager karmen-pws-connector]
-    type: git_repo
-    path: ~/karmen-pws-connector
-    origin: https://github.com/fragaria/karmen-pws-connector.git
-    primary_branch: main
+type: git_repo
+path: ~/karmen-pws-connector
+origin: https://github.com/fragaria/karmen-pws-connector.git
+primary_branch: main
 EOD
 fi
 

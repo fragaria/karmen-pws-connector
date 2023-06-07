@@ -19,7 +19,7 @@ echo "Adding spectoda leds port to allowed ports."
 CONFIG_FILE=$PRINTER_DATA/config/websocket-proxy.conf
 sudo -u $USER grep -v FORWARD_TO_PORTS $CONFIG_FILE > /tmp/spectoda-pws-upgrade.tmp
 
-sudo -u $USER cat >$PRINTER_DATA/config/websocket-proxy.conf <<EOF
+sudo -u $USER tee $PRINTER_DATA/config/websocket-proxy.conf > /dev/null <<EOF
 `cat /tmp/spectoda-pws-upgrade.tmp`
 FORWARD_TO_PORTS=80,8888
 EOF
