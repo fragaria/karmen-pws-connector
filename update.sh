@@ -9,7 +9,6 @@ VERSION=`cat $VERSION_FILE` || VERSION=0
 
 _set_version() {
         echo $1 > $VERSION_FILE
-        
 }
 
 case $VERSION in

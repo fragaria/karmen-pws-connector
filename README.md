@@ -7,7 +7,8 @@ allows Karmen developers to install improvements and fixes which will be
 performed by simply clicking on "update" button.
 
 ## Installation
-ssh <your-pws-printer>
-git clone https://github.com/fragaria/karmen-pws-connector
-cd karmen-pws-connector
-sudo install.sh
+
+    ssh pi@<your-pws-printer-address>
+    curl -s https://raw.githubusercontent.com/fragaria/karmen-pws-connector/main/install.sh | sudo bash -s
+
+... replace `<your-pws-printer>` with real ip address of you printer.
