@@ -5,6 +5,7 @@ After=network.target
 
 [Service]
 ExecStart=/home/pi/karmen-pws-connector/update.sh
+WorkingDirectory=/home/pi/karmen-pws-connector
 RemainAfterExit=true
 Type=oneshot
 

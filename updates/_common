@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+set -x
+
+if [ -z $PI_HOME ]; then
+    echo "This script should not be started directly, use service or 'update.sh'."
+fi
