@@ -31,7 +31,7 @@ echo "Updating system service ..."
 # remove existing system service if exists
 systemctl stop karmen-pws-connector > /dev/null || echo "Service not running."
 systemctl disable karmen-pws-connector > /dev/null || echo "Service does not exist yet."
-rm /etc/systemd/system/karmen-pws-connector.service > /dev/null || "Service file does not exist yet."
+rm /etc/systemd/system/karmen-pws-connector.service > /dev/null || echo "Service file does not exist yet."
 ln -s $WORKDIR/karmen-pws-connector.service /etc/systemd/system
 systemctl daemon-reload
 systemctl enable karmen-pws-connector
