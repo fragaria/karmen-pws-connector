@@ -23,7 +23,7 @@ if [ -d $WORKDIR ]; then
 fi
 
 echo "Installing connector files..."
-sudo su -u $USER git clone --depth=1 https://github.com/fragaria/karmen-pws-connector.git
+sudo sudo -u $USER git clone --depth=1 https://github.com/fragaria/karmen-pws-connector.git
 
 cd karmen-pws-connector
 
