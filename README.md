@@ -11,4 +11,4 @@ performed by simply clicking on "update" button.
     ssh pi@<your-pws-printer-address>
     curl -s https://raw.githubusercontent.com/fragaria/karmen-pws-connector/main/install.sh | sudo bash -s
 
-... replace `<your-pws-printer>` with real ip address of you printer.
+Replace `<your-pws-printer>` with real ip address of you printer.
