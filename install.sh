@@ -31,7 +31,7 @@ systemctl start karmen-pws-connector
 
 echo "Adding service to Moonraker update manager ..."
 if ! grep karmen-pws-connector $HOME/printer_data/config/moonraker.conf > /dev/null; then
-sudo -u pi cat >> $HOME/printer_data/config/moonraker.conf <<EOD
+sudo -u pi cat >>$HOME/printer_data/config/moonraker.conf <<EOD
 [update_manager karmen-pws-connector]
     type: git_repo
     path: ~/karmen-pws-connector
