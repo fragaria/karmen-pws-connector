@@ -33,5 +33,12 @@ case $VERSION in
         _set_version 2
         VERSION=2
         ;;&
+    1)
+        # karmen <-> spectoda support
+        cd $WORKDIR
+        bash updates/20230614-websocket-restart-interval.sh
+        _set_version 3
+        VERSION=3
+        ;;&
 esac
 
